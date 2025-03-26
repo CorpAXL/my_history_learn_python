@@ -1,0 +1,30 @@
+#Исходя из своих начальных знаний написал калькулятор. 
+
+num1 = int(input('Введите первое число'))
+num2 = int(input('Введите второе число'))
+process = input('Введите мат. операцию: \n 1. * Умножение \n 2. - Вычитание \n 3. + Сложение \n 4. / Деление \n 6. ** Возведение в степень \n 7. // Деление без остатка \n 8. % Получение остатка от деления ')
+
+if process == '*':
+    res = num1 * num2
+    print(f'Результат умножения {res}')
+elif process == '/':
+    res = num1 / num2
+    print(f'Результат деления {res}')
+elif process == '+':
+    res = num1 + num2
+    print(f'Результат сложения {res}')
+elif process == '-':
+    res = num1 - num2
+    print(f'Результат вычитания {res}')
+elif process == '**':
+    res = num1 ** num2
+    print(f'Результат возведения {num1} в степень {num2} \n {res}')
+elif process == '//':
+    res = num1 // num2
+    print(f'Результат деления без остатка {num1} и {num2} \n {res}')
+elif process == '%':
+    res = num1 ** num2
+    print(f'Результат получения остатка от деления {num1} и {num2} \n {res}')
+else:
+    print('Неверно указана мат. операция.')
+    
